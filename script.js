@@ -9,8 +9,9 @@ let result = document.querySelector(".output");
 let result2 = document.querySelector(".output-tags xmp");
 
 b.addEventListener("click", ()=> {
-    let arrText = text.value.split('\n');
-    let arrHref = href.value.split('\n');
+    result.innerHTML = "";
+    let arrText = text.value.trim().split('\n');
+    let arrHref = href.value.trim().split('\n');
     arrHrefNew = arrHref.map(str => {
         if(str.indexOf("http://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai") !== -1){
            return str.replace('http://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai', '');
@@ -39,6 +40,7 @@ b.addEventListener("click", ()=> {
 });
 
 b1.addEventListener("click", ()=> {
+    result2.innerHTML = "";
     let arrTextTag = textTag.value.split('\n');
     let arrHrefTag = urlTag.value.split('\n');
     arrHrefTagNew = arrHrefTag.map(str => {
