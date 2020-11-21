@@ -70,6 +70,12 @@ textarea {
   resize: none;
   padding: 7px; }
 
+.check-no {
+  border: 2px solid red; }
+
+.check-yes {
+  border: 2px solid green; }
+
 .output1, .output2 {
   background: #202234;
   border: 2px solid black;
