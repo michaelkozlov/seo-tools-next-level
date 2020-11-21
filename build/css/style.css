@@ -65,10 +65,14 @@ h1, h2 {
   justify-content: space-between;
   margin-bottom: 50px; }
 
-textarea {
+.text-area-block {
   width: 45%;
+  position: relative; }
+
+textarea {
   resize: none;
-  padding: 7px; }
+  padding: 7px;
+  width: 100%; }
 
 .check-no {
   border: 2px solid red; }
@@ -83,3 +87,23 @@ textarea {
   width: 100%;
   color: white;
   margin-bottom: 30px; }
+
+.pop-up {
+  position: absolute;
+  display: flex;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: pink; }
+
+.pop-up-one {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10px; }
+
+.pop-up-two {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 10px; }
