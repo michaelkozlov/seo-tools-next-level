@@ -3,7 +3,7 @@ const href = document.querySelector("#texthref");
 const textTag = document.querySelector("#text-name-tag");
 const urlTag = document.querySelector("#text-url-tag");
 
-let b = document.querySelector(".b-two");
+let b2 = document.querySelector(".b-two");
 let b1 = document.querySelector(".b-one");
 let result = document.querySelector(".output");
 let result2 = document.querySelector(".output-tags xmp");
@@ -11,7 +11,7 @@ let result2 = document.querySelector(".output-tags xmp");
 let buttonClearOne = document.querySelector(".b-clear-one");
 let buttonClearTwo = document.querySelector(".b-clear-two");
 
-b.addEventListener("click", () => {
+b2.addEventListener("click", () => {
     result.innerHTML = "";
     let arrText = text.value.trim().split('\n');
     let arrHref = href.value.trim().split('\n');
