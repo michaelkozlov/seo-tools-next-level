@@ -87,17 +87,8 @@ b1.addEventListener("click", () => {
 
 function cut(arr) {
     return arr.map(str => {
-        if (str.indexOf("http://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai") !== -1) {
-            return str.replace('http://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai', '');
-        }
-        if (str.indexOf("https://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai" !== -1)) {
-            return str.replace('https://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai', '');
-        }
-        if (str.indexOf("http://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai/shop/folder") !== -1) {
-            return str.replace('http://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai/shop/folder', '');
-        }
-        if (str.indexOf("https://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai/shop/folder" !== -1)) {
-            return str.replace('https://xn--1-----8vefgeugb1aimdekb0alg1ambq6dd41a2a.xn--p1ai/shop/folder', '');
+        if (str.indexOf("/tag/") !== -1) {
+            return str.substring(str.indexOf("/tag/"), str.length);
         }
     });
 }
