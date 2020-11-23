@@ -43,6 +43,26 @@ h1, h2{
   color: white;
 }
 
+.top-menu{
+  position: fixed;
+  height: 5vh;
+  width: 100%;
+  background: #31334A;
+  color: #ECEFF1;
+  font-size: 18px;
+  a{
+    color: white;
+    text-underline: none;
+    &:hover{
+      cursor: pointer;
+    }
+    &:visited{
+      color: #ECEFF1;
+    }
+  }
+
+}
+
 .button_get_code{
   @include buttonStyle;
 }
