@@ -160,7 +160,7 @@ textarea {
   justify-content: space-between;
   margin-bottom: 5px; }
 
-.wrapper-task {
+.wrapper-task-main {
   height: 100vh;
   display: flex;
   justify-content: center;
