@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/css/style.css">
+    <title>Вывод тегов на сайты</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<div>
+    <div class="main">
+        <h1>Вывод тегов на сайты</h1>
+        <h2>Создание общей страницы с группой тегов</h2>
+        <div class="wrapper-task">
+            <div class="wrapper-textarea">
+                <div class="text-area-block">
+                <textarea name="" id="text-name-tag" cols="30" rows="10"
+                          placeholder="Сюда названия тегов"></textarea>
+                </div>
+                <div class="text-area-block">
+                <textarea name="" id="text-url-tag" cols="30" rows="10"
+                          placeholder="Сюда url тегов"></textarea>
+                </div>
+            </div>
+            <div class="block-button">
+                <button class="button_get_code b-one">Получить код</button>
+                <button class="button_clear_code button_clear_textarea_one">Очистить поля ввода</button>
+            </div>
+            <div class="output2">
+                <xmp><p></xmp>
+                <div class="output-tags" style="margin: 0;">
+                    <xmp></xmp>
+                </div>
+                <xmp></p></xmp>
+            </div>
+            <button class="button_clear_code b-clear-one">Очистить</button>
+        </div>
+        <h2>Вывод тегов в категорию</h2>
+        <div class="wrapper-task">
+            <div class="wrapper-textarea">
+                <div class="text-area-block">
+                <textarea name="" id="textarea" cols="30" rows="10"
+                          placeholder="Сюда текст"></textarea>
+                    <div class="pop-up pop-up-one">Вы не ввели "все подборки"</div>
+                </div>
+                <div class="text-area-block">
+                <textarea name="" id="texthref" cols="30" rows="10"
+                          placeholder="Сюда ссылки"></textarea>
+                    <div class="pop-up pop-up-two">Вы не ввели ссылку на "Все подборки / tags"</div>
+                </div>
+            </div>
+        <div class="block-button">
+            <button class="button_get_code b-two">Получить код</button>
+            <button class="button_clear_code button_clear_textarea_two">Очистить поля ввода</button>
+        </div>
+        <div class="output1">
+            <xmp><div style="min-height: 70px;"><ul></xmp>
+            <div class="output" style="margin: 0;"></div>
+            <xmp></ul></div></xmp>
+    </div>
+    <button class="button_clear_code b-clear-two">Очистить</button>
+</div>
+</div>
+<script async src="script/script.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.1.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
