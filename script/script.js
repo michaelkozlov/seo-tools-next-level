@@ -93,6 +93,15 @@ function cut(arr) {
         if (str.indexOf("/recomend/") !== -1) {
             return str.substring(str.indexOf("/recomend/"), str.length);
         }
+        if (str.indexOf("/recommend/") !== -1) {
+            return str.substring(str.indexOf("/recommend/"), str.length);
+        }
+        if (str.indexOf("/select/") !== -1) {
+            return str.substring(str.indexOf("/select/"), str.length);
+        }
+        if (str.indexOf("/ext/") !== -1) {
+            return str.substring(str.indexOf("/ext/"), str.length);
+        }
         if (str.indexOf("/tags/") !== -1) {
             return str.substring(str.indexOf("/tags/"), str.length);
         }
